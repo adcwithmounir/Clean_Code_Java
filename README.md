@@ -53,6 +53,16 @@ java Main
 
 Run `before/` and `after/` side by side: the output is the same, only the code got cleaner.
 
+### 🧪 Tests (JUnit 5)
+
+Episodes with tests use **JUnit 5** through the standalone launcher, no build tool needed. Download
+`junit-platform-console-standalone-1.11.4.jar` from Maven Central into `lib/`, then:
+
+```bash
+javac --release 17 -cp ../../lib/junit-platform-console-standalone-1.11.4.jar -d out *.java
+java -jar ../../lib/junit-platform-console-standalone-1.11.4.jar -cp out --scan-classpath
+```
+
 ## 📖 Inspired by
 
 *Clean Code: A Handbook of Agile Software Craftsmanship* — Robert C. Martin (Prentice Hall).
