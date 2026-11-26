@@ -12,7 +12,7 @@ but is hard to read, then cleans it up step by step: one small change, its expla
 
 | # | Episode | Code | Status |
 |:-:|---|---|:-:|
-| 1 | Clean Code | `CleanCode_1_Clean_Code/` | 🔜 |
+| 1 | Clean Code | [`CleanCode_1_Clean_Code/`](CleanCode_1_Clean_Code/) | ✅ |
 | 2 | Meaningful Names | `CleanCode_2_Meaningful_Names/` | 🔜 |
 | 3 | Functions | `CleanCode_3_Functions/` | 🔜 |
 | 4 | Comments | `CleanCode_4_Comments/` | 🔜 |
@@ -43,12 +43,11 @@ Plain Java files, no package, no build tool: each folder compiles and runs on it
 
 ## ▶️ Run it
 
-Requirements: **Java 17+** (the code uses nothing newer than Java 17, so it runs on 17, 21 and later).
+Requirements: **Java 25** (the labs use compact source files: `void main()`, `IO.println`, run directly with `java File.java`).
 
 ```bash
-cd CleanCode_3_Functions/after
-javac *.java
-java Main
+cd CleanCode_1_Clean_Code/after
+java OrderTotal.java
 ```
 
 Run `before/` and `after/` side by side: the output is the same, only the code got cleaner.
@@ -59,7 +58,7 @@ Episodes with tests use **JUnit 5** through the standalone launcher, no build to
 `junit-platform-console-standalone-1.11.4.jar` from Maven Central into `lib/`, then:
 
 ```bash
-javac --release 17 -cp ../../lib/junit-platform-console-standalone-1.11.4.jar -d out *.java
+javac -cp ../../lib/junit-platform-console-standalone-1.11.4.jar -d out *.java
 java -jar ../../lib/junit-platform-console-standalone-1.11.4.jar -cp out --scan-classpath
 ```
 
