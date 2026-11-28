@@ -15,7 +15,7 @@ but is hard to read, then cleans it up step by step: one small change, its expla
 | 1 | Clean Code | [`CleanCode_1_Clean_Code/`](CleanCode_1_Clean_Code/) | ✅ |
 | 2 | Meaningful Names | [`CleanCode_2_Meaningful_Names/`](CleanCode_2_Meaningful_Names/) | ✅ |
 | 3 | Functions | [`CleanCode_3_Functions/`](CleanCode_3_Functions/) | ✅ |
-| 4 | Comments | `CleanCode_4_Comments/` | 🔜 |
+| 4 | Comments | [`CleanCode_4_Comments/`](CleanCode_4_Comments/) | ✅ |
 | 5 | Formatting | `CleanCode_5_Formatting/` | 🔜 |
 | 6 | Objects and Data Structures | `CleanCode_6_Objects_And_Data_Structures/` | 🔜 |
 | 7 | Error Handling | `CleanCode_7_Error_Handling/` | 🔜 |
